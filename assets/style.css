@@ -29,3 +29,7 @@
     content: "·";
     margin: 0 0.3em;
 }
+
+.code-no-color code {
+    background-color: transparent;
+}
