@@ -73,3 +73,4 @@ nav:
     - Умовний оператор Якщо: specification/if.md
     - Цикл Поки: specification/while.md
     - Функції та процедури: specification/function.md
+    - Вбудовані об'єкти: specification/builtin.md
