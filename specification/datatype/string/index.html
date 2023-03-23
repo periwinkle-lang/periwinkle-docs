@@ -561,6 +561,13 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    Конструктор
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     Екранування, спеціальні символи
   </a>
   
@@ -568,7 +575,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     Таблиця спеціальних символів
   </a>
   
@@ -580,14 +587,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     Конкатенація
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     Атрибути
   </a>
   
@@ -713,6 +720,13 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    Конструктор
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     Екранування, спеціальні символи
   </a>
   
@@ -720,7 +734,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     Таблиця спеціальних символів
   </a>
   
@@ -732,14 +746,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     Конкатенація
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     Атрибути
   </a>
   
@@ -768,9 +782,14 @@
 <p>Стрічка - це послідовність символів. В коді записується за допомогою символів в UTF-8 у подвійних лапках:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="s">&quot;привіт&quot;</span>
 </code></pre></div>
-<h2 id="_2">Екранування, спеціальні символи<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">Конструктор<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Конструктор має наступну сигнатуру</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Стрічка</span><span class="err">(</span><span class="n">значення</span><span class="err">)</span>
+</code></pre></div>
+<p>Приймає будь-яке значення, та приводить його до стрічки.</p>
+<h2 id="_3">Екранування, спеціальні символи<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>За допомогою символу "\" в стрічку можна вписати спеціальні символи. У Барвінку для поліпшення ергономіки спеціальні символи мають як англійський варіант, так і українську версію.</p>
-<h3 id="_3">Таблиця спеціальних символів<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_4">Таблиця спеціальних символів<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -832,19 +851,19 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">Конкатенація<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_5">Конкатенація<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>Конкатенація проходить за допомогою оператора <code>+</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">друкр</span><span class="err">(</span><span class="s">&quot;число &quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="mi">1</span><span class="err">) </span><span class="c">// Виведе в консоль &quot;число 1&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">друкр</span><span class="err">(</span><span class="s">&quot;число &quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="mi">1</span><span class="err">) </span><span class="c">// Виведе в консоль &quot;число 1&quot;</span>
 </code></pre></div>
 <p>В стрічках оператора <code>+</code> перевантажений так, що він може приймати будь який тип об'єкта, якщо в ньому реалізований метод <code>toString</code>, винятком є тип <a href="../null/">Нич</a></p>
-<p><div class="highlight"><span class="filename">конкатенація.бр</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nf">друкр</span><span class="err">(</span><span class="s">&quot;&quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="no">нич</span><span class="err">)</span>
+<p><div class="highlight"><span class="filename">конкатенація.бр</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nf">друкр</span><span class="err">(</span><span class="s">&quot;&quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="no">нич</span><span class="err">)</span>
 </code></pre></div>
 Виведе:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>конкатенація.бр
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="go"> На стрічці 1 знайдено помилку</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go"> ПомилкаТипу: Непідтримувані типи операндів &quot;String&quot; та &quot;Null&quot; для оператора +</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>конкатенація.бр
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="go"> На стрічці 1 знайдено помилку</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="go"> ПомилкаТипу: Непідтримувані типи операндів &quot;String&quot; та &quot;Null&quot; для оператора +</span>
 </code></pre></div></p>
-<h2 id="_5">Атрибути<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_6">Атрибути<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">довжина</span><span class="err">()</span></code> - Повертає кількість символів в стрічці.</li>
 </ul>

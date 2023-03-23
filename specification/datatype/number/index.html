@@ -533,20 +533,27 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Знак числа
+    Конструктор
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    Можливі значення
+    Знак числа
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
+    Можливі значення
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     Переповнення
   </a>
   
@@ -700,20 +707,27 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Знак числа
+    Конструктор
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    Можливі значення
+    Знак числа
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
+    Можливі значення
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     Переповнення
   </a>
   
@@ -740,13 +754,18 @@
 
 <h1 id="_1">Число<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>Тип даних Число в Барвінку використовується для зберігання числових значень.</p>
-<h2 id="_2">Знак числа<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Перед числовим літералом можна вказати знак <code>+</code> або <code>-</code> для визначення знаку числа. Якщо знак числа не вказаний, то вважається, що число має додатній знак.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="mi">10</span><span class="err">  </span><span class="c">// Додатне число</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">+</span><span class="mi">42</span><span class="err"> </span><span class="c">// Також додатне число</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="o">-</span><span class="mi">15</span><span class="err"> </span><span class="c">// Від&#39;ємне число</span>
+<h2 id="_2">Конструктор<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Конструктор має наступну сигнатуру</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Число</span><span class="err">(</span><span class="n">значення</span><span class="err">)</span>
 </code></pre></div>
-<h2 id="_3">Можливі значення<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Приймає будь-яке значення, та приводить його до числа.</p>
+<h2 id="_3">Знак числа<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Перед числовим літералом можна вказати знак <code>+</code> або <code>-</code> для визначення знаку числа. Якщо знак числа не вказаний, то вважається, що число має додатній знак.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="mi">10</span><span class="err">  </span><span class="c">// Додатне число</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">+</span><span class="mi">42</span><span class="err"> </span><span class="c">// Також додатне число</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">-</span><span class="mi">15</span><span class="err"> </span><span class="c">// Від&#39;ємне число</span>
+</code></pre></div>
+<h2 id="_4">Можливі значення<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>Діапазон допустимих значень числа в Барвінку обмежений. В пам'яті комп'ютера числа зберігаються в межах 64 бітів.</p>
 <table>
 <thead>
@@ -762,7 +781,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">Переповнення<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_5">Переповнення<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>При виконанні математичних операцій з числами може статися так, що результат не буде входити в діапазон допустимих значень, що приводить до переповнення, яке викликає непередбачувані наслідки.</p>
 <div class="admonition note">
 <p class="admonition-title">Примітка</p>
