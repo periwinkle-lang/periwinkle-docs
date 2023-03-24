@@ -2,12 +2,17 @@
 
 Вбудовані об'єкти - це об'єкти, які завжди доступні в коді.
 
-## Список функцій
+## Список об'єктів
 
 + [друк](#_3)
 + [друкр](#_4)
 + [зчитати](#_5)
++ [Число](datatype/number.md)
++ [Логічний](datatype/bool.md)
++ [Стрічка](datatype/string.md)
++ [Дійсний](datatype/real.md)
 + [Масив](datatype/array.md)
+
 
 ### `#!periwinkle функція друк(обєкти...)` {.code-no-color}
 <p style="margin-left: 30px;" markdown>
