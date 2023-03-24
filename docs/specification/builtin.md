@@ -7,11 +7,13 @@
 + [друк](#_3)
 + [друкр](#_4)
 + [зчитати](#_5)
++ [ітератор](#_6)
 + [Число](datatype/number.md)
 + [Логічний](datatype/bool.md)
 + [Стрічка](datatype/string.md)
 + [Дійсний](datatype/real.md)
 + [Масив](datatype/array.md)
++ [КінецьІтерації](iterators.md#_2)
 
 
 ### `#!periwinkle функція друк(обєкти...)` {.code-no-color}
@@ -27,4 +29,9 @@
 ### `#!periwinkle функція зчитати()` {.code-no-color}
 <p style="margin-left: 30px;" markdown>
 Зчитує з консолі ввід та повертає у вигляді стрічки
+</p>
+
+### `#!periwinkle функція ітератор(обєкт)` {.code-no-color}
+<p style="margin-left: 30px;" markdown>
+Повертає ітератор для об'єкта. Якщо це неможливо, то викидає помилку
 </p>

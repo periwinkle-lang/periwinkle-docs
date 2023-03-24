@@ -74,3 +74,4 @@ nav:
     - Цикл Поки: specification/while.md
     - Функції та процедури: specification/function.md
     - Вбудовані об'єкти: specification/builtin.md
+    - Ітератори: specification/iterators.md
