@@ -75,3 +75,4 @@ nav:
     - Функції та процедури: specification/function.md
     - Вбудовані об'єкти: specification/builtin.md
     - Ітератори: specification/iterators.md
+    - Цикл Кожній: specification/forEach.md
