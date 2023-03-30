@@ -403,13 +403,20 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    Зони видимості
+    Шебанг
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
+    Зони видимості
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     Виконання коду
   </a>
   
@@ -737,13 +744,20 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    Зони видимості
+    Шебанг
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
+    Зони видимості
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     Виконання коду
   </a>
   
@@ -769,30 +783,36 @@
 
 
 <h1 id="_1">Програма<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Програмою вважаються файли з розширенням .бр та .барвінок</p>
+<p>Програмою вважаються файли з розширенням .бр та .барвінок, але запускати можна файли з будь-яким розширенням</p>
 <div class="admonition info">
 <p class="admonition-title">Важливо</p>
 <p>Файл має бути закодований в UTF-8</p>
 </div>
 <h2 id="_2">Структура програми<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>Програма складається з інструкцій(оголошення функцій, інструкції якщо, циклу, тощо) та виразів(присвоєння змінній значення, змінних, отримання атрибутів, літерали, виклики функції).</p>
-<h2 id="_3">Зони видимості<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">Шебанг<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Барвінок підтримує <a href="https://uk.wikipedia.org/wiki/%D0%A8%D0%B5%D0%B1%D0%B0%D0%BD%D0%B3_(Unix)">шебанг</a>.</p>
+<p>Приклад програми з шебангом</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!барвінок</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Привіт, Світ!&quot;</span><span class="err">)</span>
+</code></pre></div>
+<h2 id="_4">Зони видимості<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>Все, що визначається за межами функції, належить до глобальної зони видимості. Тоді як, все, що визначається в межах функції, належить до локальної зони видимості.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">число</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">20</span><span class="err"> </span><span class="c">// глобальна зона видимості</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">тест</span><span class="err">() </span><span class="c">// функція теж належить до глобальної зони видимості</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="err">    </span><span class="n">стрічка</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="s">&quot;Привіт, світ&quot;</span><span class="err"> </span><span class="c">// локальна зона видимості</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">кінець</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="_4">Виконання коду<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>У Барвінку немає поняття точки входу в програму, тому код виконується в порядку написання.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">привітання</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="s">&quot;Привіт, %ім&#39;я%&quot;</span><span class="err"> </span><span class="c">// Виконання програми почнеться тут</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nb">друкр</span><span class="err">(</span><span class="n">привітання</span><span class="err">)</span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">число</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">20</span><span class="err"> </span><span class="c">// глобальна зона видимості</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">тест</span><span class="err">() </span><span class="c">// функція теж належить до глобальної зони видимості</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="err">    </span><span class="n">стрічка</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="s">&quot;Привіт, світ&quot;</span><span class="err"> </span><span class="c">// локальна зона видимості</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">кінець</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_5">Виконання коду<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>У Барвінку немає поняття точки входу в програму, тому код виконується в порядку написання.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">привітання</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="s">&quot;Привіт, %ім&#39;я%&quot;</span><span class="err"> </span><span class="c">// Виконання програми почнеться тут</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nb">друкр</span><span class="err">(</span><span class="n">привітання</span><span class="err">)</span>
 </code></pre></div></td></tr></table></div>
 
 

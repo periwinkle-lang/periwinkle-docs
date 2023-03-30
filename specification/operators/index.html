@@ -464,6 +464,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Оператор "є"
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -735,6 +742,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Оператор "є"
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -772,8 +786,9 @@
 |           | Цілочисельне ділення | `а \ б`       | `а \= б`          |
 |3          | Додавання            | `а + б`       | `а += б`          |
 |           | Віднімання           | `а - б`       | `а -= б`          |
-|           | Менше                | `а менше б`   |                   |
-|4          | Менше дорівнює       | `а менше= б`  |                   |
+|4          | Менше                | `а менше б`   |                   |
+|           | є                    | `а є б`       |                   |
+|           | Менше дорівнює       | `а менше= б`  |                   |
 |           | Більше               | `а більше б`  |                   |
 |           | Більше дорівнює      | `а більше= б` |                   |
 |           | Рівно                | `а == б`      |                   |
@@ -825,7 +840,7 @@
 <td><code>а \= б</code></td>
 </tr>
 <tr>
-<td rowspan="3" style="border-right: 1px solid var(--md-typeset-table-color)">3</td>
+<td rowspan="2" style="border-right: 1px solid var(--md-typeset-table-color)">3</td>
 <td>Додавання</td>
 <td><code>а + б</code></td>
 <td><code>а += б</code></td>
@@ -836,12 +851,16 @@
 <td><code>а -= б</code></td>
 </tr>
 <tr>
+<td rowspan="7" style="border-right: 1px solid var(--md-typeset-table-color)">4</td>
+<td>є</td>
+<td><code>а є б</code></td>
+<td></td>
+</tr>
 <td>Менше</td>
 <td><code>а менше б</code></td>
 <td></td>
 </tr>
 <tr>
-<td rowspan="5" style="border-right: 1px solid var(--md-typeset-table-color)">4</td>
 <td>Менше дорівнює</td>
 <td><code>а менше= б</code></td>
 <td></td>
@@ -886,6 +905,19 @@
 </tr>
 </tbody>
 </table>
+
+<h2 id="_4">Оператор "є"<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Оператор <code class="highlight"><span class="k k-Operator">є</span></code> використовується для перевірки ідентичності об'єктів, а не їх значення.</p>
+<div class="highlight"><span class="filename">1 випадок</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nb">Масив</span><span class="err">(</span><span class="mi">1</span><span class="p">,</span><span class="err"> </span><span class="mi">2</span><span class="p">,</span><span class="err"> </span><span class="mi">3</span><span class="err">)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">б</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="n">а</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">друкр</span><span class="err">(</span><span class="n">а</span><span class="err"> </span><span class="k k-Operator">є</span><span class="err"> </span><span class="n">б</span><span class="err">) </span><span class="c">// істина</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">2 випадок</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nb">Масив</span><span class="err">(</span><span class="mi">1</span><span class="p">,</span><span class="err"> </span><span class="mi">2</span><span class="p">,</span><span class="err"> </span><span class="mi">3</span><span class="err">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">б</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nb">Масив</span><span class="err">(</span><span class="mi">1</span><span class="p">,</span><span class="err"> </span><span class="mi">2</span><span class="p">,</span><span class="err"> </span><span class="mi">3</span><span class="err">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">друкр</span><span class="err">(</span><span class="n">а</span><span class="err"> </span><span class="k k-Operator">є</span><span class="err"> </span><span class="n">б</span><span class="err">) </span><span class="c">// хиба</span>
+</code></pre></div>
+<p>В першому прикладі, змінній <code>б</code> було присвоєно значення <code>а</code>, що означає, що обидві змінні посилаються на один і той же об'єкт, тому оператор <code class="highlight"><span class="k k-Operator">є</span></code> повернув істину.</p>
+<p>У другому прикладі, змінній <code>а</code> та <code>б</code> було присвоєно різні значення, тому оператор <code class="highlight"><span class="k k-Operator">є</span></code> повернув хибу, оскільки ці змінні посилаються на різні об'єкти.</p>
 
 
 
