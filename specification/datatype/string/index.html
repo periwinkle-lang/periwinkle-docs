@@ -609,6 +609,19 @@
     Атрибути
   </a>
   
+    <nav class="md-nav" aria-label="Атрибути">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    Статичні методи
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -803,6 +816,19 @@
     Атрибути
   </a>
   
+    <nav class="md-nav" aria-label="Атрибути">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    Статичні методи
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -913,7 +939,28 @@
 <p>Стрічка реалізовує <a href="../../iterators/">ітератор</a>, який обходить символи стрічки зліва направо.</p>
 <h2 id="_7">Атрибути<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ul>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">видалитиЗакінчення</span><span class="err">(</span><span class="n">закінчення</span><span class="err">)</span></code> - Якщо закінчення стрічки збігається з переданим, то метод повертає нову стрічку без цього закінчення.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">видалитиПрефікс</span><span class="err">(</span><span class="n">префікс</span><span class="err">)</span></code> - Якщо префікс стрічки збігається з переданим, то метод повертає нову стрічку без префіксу.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">вставити</span><span class="err">(</span><span class="n">індекс</span><span class="p">,</span><span class="err"> </span><span class="n">стрічка</span><span class="err">)</span></code> - Повертає стрічку, в яку вставлено передану стрічку за вказаним індексом. Викидає помилку <code>ПомилкаІндексу</code>, якщо індекс більший за довжину стрічки.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">встановити</span><span class="err">(</span><span class="n">індекс</span><span class="p">,</span><span class="err"> </span><span class="n">стрічка</span><span class="err">)</span></code> - Повертає стрічку, в якій символ за вказаним індексом замінено на передану стрічку. Викидає помилку <code>ПомилкаІндексу</code>, якщо індекс більший за довжину стрічки.</li>
 <li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">довжина</span><span class="err">()</span></code> - Повертає кількість символів в стрічці.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">закінчуєтьсяНа</span><span class="err">(</span><span class="n">закінчення</span><span class="err">)</span></code> - Перевіряє, чи стрічка закінчується на передане закінчення.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">замінити</span><span class="err">(</span><span class="n">що</span><span class="p">,</span><span class="err"> </span><span class="n">чим</span><span class="err">)</span></code> - Повертає стрічку, в якій замінено всі входження переданої стрічки у заданій стрічці на нову стрічку.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">знайти</span><span class="err">(</span><span class="n">стрічка</span><span class="err">)</span></code> - Повертає індекс першого входження переданої стрічки в заданій стрічці. Якщо стрічки з таким індексом не існує, то поверне -1.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">копія</span><span class="err">()</span></code> - Повертає копію стрічки.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">кількість</span><span class="err">(</span><span class="n">стрічка</span><span class="err">)</span></code> -  Повертає кількість входжень переданої стрічки в заданій стрічці.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">містить</span><span class="err">(</span><span class="n">стрічка</span><span class="err">)</span></code> - Перевіряє, чи задана стрічка містить передану стрічку.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">отримати</span><span class="err">(</span><span class="n">індекс</span><span class="err">)</span></code> - Повертає символ зі стрічки по індексу. Викидає помилку <code>ПомилкаІндексу</code>, якщо індекс більший за довжину стрічки. </li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">починаєтьсяНа</span><span class="err">(</span><span class="n">початок</span><span class="err">)</span></code> - Перевіряє, чи стрічка починається на переданий початок.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">причепурити</span><span class="err">()</span></code> - Повертає стрічку, в якій видалені зайві пробіли на початку та в кінці.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">причепуритиЗліва</span><span class="err">()</span></code> - Повертає стрічку, в якій видалені зайві пробіли на початку.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">причепуритиСправа</span><span class="err">()</span></code> - Повертає стрічку, в якій видалені зайві пробіли в кінці.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">підстрічка</span><span class="err">(</span><span class="n">початок</span><span class="p">,</span><span class="err"> </span><span class="n">кількість</span><span class="err">)</span></code> -  Повертає стрічку, яка складається з символів заданої стрічки, що починаються з переданого індексу та охоплює задану кількість символів. Викидає помилку <code>ПомилкаІндексу</code>, якщо індекс більший за довжину масиву.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">розділити</span><span class="err">(</span><span class="n">роздільник</span><span class="err">)</span></code> -  Розбиває стрічку на підстрічки за заданим роздільником і повертає масив цих підстрічок.</li>
+</ul>
+<h3 id="_8">Статичні методи<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">зліпити</span><span class="err">(</span><span class="n">роздільник</span><span class="p">,</span><span class="err"> </span><span class="n">обєкти</span><span class="err">)</span></code> - Повертає стрічку, отриману з об'єднання переданих об'єктів через переданий роздільник.</li>
 </ul>
 
 
