@@ -8,4 +8,4 @@
 | [Дійсне число](datatype/real.md) | `1., .1, 0.0, -.1, -1.0` |
 | [Логічний](datatype/bool.md)     | `істина, хиба`           |
 | [Стрічка](datatype/string.md)    | `"Привіт, Світ\н"`       |
-| [Нич](datatype/null.md)          | `нич`                    |
+| [Ніц](datatype/null.md)          | `ніц`                    |

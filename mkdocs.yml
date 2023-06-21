@@ -64,12 +64,12 @@ nav:
     - Змінні: specification/variables.md
     - Оператори: specification/operators.md
     - Типи даних:
-      - Нич: specification/datatype/null.md
+      - Ніц: specification/datatype/null.md
       - Логічний: specification/datatype/bool.md
       - Число: specification/datatype/number.md
       - Дійсний: specification/datatype/real.md
       - Стрічка: specification/datatype/string.md
-      - Масив: specification/datatype/array.md
+      - Список: specification/datatype/list.md
     - Умовний оператор Якщо: specification/if.md
     - Цикл Поки: specification/while.md
     - Функції та процедури: specification/function.md
