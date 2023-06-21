@@ -473,7 +473,7 @@
   
     <li class="md-nav__item">
       <a href="../datatype/null/" class="md-nav__link">
-        Нич
+        Ніц
       </a>
     </li>
   
@@ -542,8 +542,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../datatype/array/" class="md-nav__link">
-        Масив
+      <a href="../datatype/list/" class="md-nav__link">
+        Список
       </a>
     </li>
   
@@ -755,13 +755,13 @@
 
 
 <h1 id="_1">Ітератори<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Ітератор - це об'єкт, який дозволяє обходити елементи колекції, зокрема <a href="../datatype/array/">масиву</a>. Їх можна використовувати для виконання дії над кожним елементом колекції.</p>
+<p>Ітератор - це об'єкт, який дозволяє обходити елементи колекції, зокрема <a href="../datatype/list/">списку</a>. Їх можна використовувати для виконання дії над кожним елементом колекції.</p>
 <p>Ітератором вважається будь-який об'єкт, що реалізує метод <code class="highlight"><span class="nf">наступний</span><span class="err">()</span></code>, який повинен повертати наступний елемент, або при закінченні ітерації спеціальний об'єкт <code class="highlight"><span class="nb">КінецьІтерації</span></code></p>
 <h2 id="_2">КінецьІтерації<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><code class="highlight"><span class="nb">КінецьІтерації</span></code> - це допоміжний об'єкт, який використовується для сигналізування про кінець ітерації в ітераторах.</p>
 <h2 id="_3">Приклад використання<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>Обхід елементів масиву</p>
-<div class="highlight"><span class="filename">приклад_ітератора.бр</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nb">Масив</span><span class="err">(</span><span class="mi">1</span><span class="p">,</span><span class="err"> </span><span class="mi">2</span><span class="p">,</span><span class="err"> </span><span class="mi">3</span><span class="p">,</span><span class="err"> </span><span class="mi">4</span><span class="p">,</span><span class="err"> </span><span class="mi">5</span><span class="err">)</span>
+<p>Обхід елементів списку</p>
+<div class="highlight"><span class="filename">приклад_ітератора.бр</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nb">Список</span><span class="err">(</span><span class="mi">1</span><span class="p">,</span><span class="err"> </span><span class="mi">2</span><span class="p">,</span><span class="err"> </span><span class="mi">3</span><span class="p">,</span><span class="err"> </span><span class="mi">4</span><span class="p">,</span><span class="err"> </span><span class="mi">5</span><span class="err">)</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">і</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nb">ітератор</span><span class="err">(</span><span class="n">а</span><span class="err">)</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">поки</span><span class="err"> </span><span class="no">істина</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="err">    </span><span class="n">елемент</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="n">і</span><span class="err">.</span><span class="nf">наступний</span><span class="err">()</span>

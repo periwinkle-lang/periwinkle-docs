@@ -473,7 +473,7 @@
   
     <li class="md-nav__item">
       <a href="../datatype/null/" class="md-nav__link">
-        Нич
+        Ніц
       </a>
     </li>
   
@@ -542,8 +542,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../datatype/array/" class="md-nav__link">
-        Масив
+      <a href="../datatype/list/" class="md-nav__link">
+        Список
       </a>
     </li>
   
@@ -654,6 +654,13 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    Іменовані параметри
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     Замикання
   </a>
   
@@ -772,6 +779,13 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    Іменовані параметри
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     Замикання
   </a>
   
@@ -806,7 +820,7 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>кінець
 </code></pre></div>
 <h2 id="_3">Повернення значень<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>За замовчування функції у Барвінку повертають <a href="../datatype/null/">нич</a>. Щоб повернути значення з функції, потрібно використати ключове слово <code>повернути</code>:</p>
+<p>За замовчування функції у Барвінку повертають <a href="../datatype/null/">ніц</a>. Щоб повернути значення з функції, потрібно використати ключове слово <code>повернути</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">привіт</span><span class="err">()</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="err">    </span><span class="k">повернути</span><span class="err"> </span><span class="s">&quot;Привіт, Світ!&quot;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">кінець</span>
@@ -815,7 +829,7 @@
 </code></pre></div>
 <p><code>повернути</code> може нічого не повертати, для цього потрібно використати синтаксис <code>повернути;</code></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">тест</span><span class="err">()</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="err">    </span><span class="k">повернути</span><span class="err">; </span><span class="c">// Поверне нич </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="err">    </span><span class="k">повернути</span><span class="err">; </span><span class="c">// Поверне ніц</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Привіт, Світ!&quot;</span><span class="err">) </span><span class="c">// Цей код не виконається </span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">кінець</span>
 </code></pre></div>
@@ -833,30 +847,41 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">варіативна</span><span class="err">(</span><span class="n">а</span><span class="p">,</span><span class="err"> </span><span class="n">б</span><span class="p">,</span><span class="err"> </span><span class="n">в</span><span class="p">...</span><span class="err">)</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">кінець</span>
 </code></pre></div>
-<p>В наведеному вище прикладі, параметр "в" є варіативним. Варіативний параметр є <a href="../datatype/array/">масивом</a>, в якому збережені по порядку аргументи, які не вмістилися в параметри до варіативного.
+<p>В наведеному вище прикладі, параметр "в" є варіативним. Варіативний параметр є <a href="../datatype/list/">списком</a>, в якому збережені по порядку аргументи, які не вмістилися в параметри до варіативного.
 <br></p>
 <div class="admonition note">
 <p class="admonition-title">Важливо</p>
-<p>Варіативний параметр може бути тільки один та має бути останнім в списку параметрів.</p>
+<p>Варіативний параметр може бути тільки один та має стояти після простих параметрів та перед іменованими.</p>
 </div>
 <ul>
 <li>Виклик такої варіативної функції не відрізняється від виклику простої функції.</li>
 <li>При виклику варіативної функції потрібно як мінімум заповнити параметри до варіативного, тобто якщо сигнатура функції виглядає так: <code class="highlight"><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">тест</span><span class="err">(</span><span class="n">а</span><span class="p">,</span><span class="err"> </span><span class="n">б</span><span class="p">,</span><span class="err"> </span><span class="n">в</span><span class="p">...</span><span class="err">)</span></code>, то при виклику потрібно передати як мінімум 2 аргументи.</li>
 </ul>
-<h2 id="_6">Замикання<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_6">Іменовані параметри<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>Іменовані параметри - це параметри, які мають значення, встановлене заздалегідь. Такі параметри можуть стояти лише в кінці списку параметрів.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">тест</span><span class="err">(</span><span class="n">а</span><span class="o">=</span><span class="mi">20</span><span class="err">) </span><span class="c">// Параметр &quot;а&quot; є іменованим</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="n">а</span><span class="err">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">кінець</span>
+</code></pre></div>
+<p>Є декілька способів викликати таку функцію:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nf">тест</span><span class="err">()     </span><span class="c">// Без заповнення параметра, виведе 20</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nf">тест</span><span class="err">(</span><span class="mi">50</span><span class="err">)   </span><span class="c">// Передати аргумент як для звичайного параметра, виведе 50</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nf">тест</span><span class="err">(</span><span class="n">а</span><span class="o">=</span><span class="mi">60</span><span class="err">) </span><span class="c">// Вказати ім&#39;я параметра та присвоїти йому значення, виведе 60</span>
+</code></pre></div>
+<h2 id="_7">Замикання<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>Замикання - це функції, які зберігають(замикають) локальні змінні зовнішньої функції.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">додати</span><span class="err">(</span><span class="n">а</span><span class="err">)</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="err">    </span><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">внутрішняФункція</span><span class="err">(</span><span class="n">б</span><span class="err">)</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="err">        </span><span class="k">повернути</span><span class="err"> </span><span class="n">а</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="n">б</span><span class="err"> </span><span class="c">// Замикання змінної &quot;а&quot;</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="err">    </span><span class="k">кінець</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="err">    </span><span class="k">повернути</span><span class="err"> </span><span class="n">внутрішняФункція</span><span class="err"> </span><span class="c">// Повернення замикання</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="k">кінець</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">дваДодати</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nf">додати</span><span class="err">(</span><span class="mi">2</span><span class="err">)</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">вісімДодати</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nf">додати</span><span class="err">(</span><span class="mi">8</span><span class="err">)</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nb">друкр</span><span class="err">(</span><span class="nf">дваДодати</span><span class="err">(</span><span class="mi">2</span><span class="err">))   </span><span class="c">// Виведе 4</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nb">друкр</span><span class="err">(</span><span class="nf">вісімДодати</span><span class="err">(</span><span class="mi">2</span><span class="err">)) </span><span class="c">// Виведе 10</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">додати</span><span class="err">(</span><span class="n">а</span><span class="err">)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">    </span><span class="k k-Control">функція</span><span class="w"> </span><span class="nf">внутрішняФункція</span><span class="err">(</span><span class="n">б</span><span class="err">)</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="err">        </span><span class="k">повернути</span><span class="err"> </span><span class="n">а</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="n">б</span><span class="err"> </span><span class="c">// Замикання змінної &quot;а&quot;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="err">    </span><span class="k">кінець</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="err">    </span><span class="k">повернути</span><span class="err"> </span><span class="n">внутрішняФункція</span><span class="err"> </span><span class="c">// Повернення замикання</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">кінець</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">дваДодати</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nf">додати</span><span class="err">(</span><span class="mi">2</span><span class="err">)</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">вісімДодати</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nf">додати</span><span class="err">(</span><span class="mi">8</span><span class="err">)</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="nb">друкр</span><span class="err">(</span><span class="nf">дваДодати</span><span class="err">(</span><span class="mi">2</span><span class="err">))   </span><span class="c">// Виведе 4</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="nb">друкр</span><span class="err">(</span><span class="nf">вісімДодати</span><span class="err">(</span><span class="mi">2</span><span class="err">)) </span><span class="c">// Виведе 10</span>
 </code></pre></div>
 
 

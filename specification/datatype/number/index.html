@@ -475,7 +475,7 @@
   
     <li class="md-nav__item">
       <a href="../null/" class="md-nav__link">
-        Нич
+        Ніц
       </a>
     </li>
   
@@ -551,13 +551,20 @@
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    Можливі значення
+    Ділення на нуль
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    Можливі значення
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     Переповнення
   </a>
   
@@ -606,8 +613,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../array/" class="md-nav__link">
-        Масив
+      <a href="../list/" class="md-nav__link">
+        Список
       </a>
     </li>
   
@@ -753,13 +760,20 @@
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    Можливі значення
+    Ділення на нуль
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    Можливі значення
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     Переповнення
   </a>
   
@@ -797,7 +811,16 @@
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">+</span><span class="mi">42</span><span class="err"> </span><span class="c">// Також додатне число</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">-</span><span class="mi">15</span><span class="err"> </span><span class="c">// Від&#39;ємне число</span>
 </code></pre></div>
-<h2 id="_4">Можливі значення<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_4">Ділення на нуль<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>При діленні на нуль Барвінок викидає помилку:</p>
+<div class="highlight"><span class="filename">ділення_на_нуль.бр</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+</code></pre></div>
+<p>Вивід:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>ділення_на_нуль.бр
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="go"> На стрічці 1 знайдено помилку</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go"> ПомилкаДіленняНаНуль: Ділення на нуль</span>
+</code></pre></div>
+<h2 id="_5">Можливі значення<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>Діапазон допустимих значень числа в Барвінку обмежений. В пам'яті комп'ютера числа зберігаються в межах 64 бітів.</p>
 <table>
 <thead>
@@ -813,7 +836,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">Переповнення<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_6">Переповнення<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>При виконанні математичних операцій з числами може статися так, що результат не буде входити в діапазон допустимих значень, що приводить до переповнення, яке викликає непередбачувані наслідки.</p>
 <div class="admonition note">
 <p class="admonition-title">Примітка</p>

@@ -12,7 +12,7 @@
         <link rel="prev" href="../real/">
       
       
-        <link rel="next" href="../array/">
+        <link rel="next" href="../list/">
       
       <link rel="icon" href="../../../img/logo.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
@@ -475,7 +475,7 @@
   
     <li class="md-nav__item">
       <a href="../null/" class="md-nav__link">
-        Нич
+        Ніц
       </a>
     </li>
   
@@ -639,8 +639,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../array/" class="md-nav__link">
-        Масив
+      <a href="../list/" class="md-nav__link">
+        Список
       </a>
     </li>
   
@@ -927,8 +927,8 @@
 <p>Конкатенація проходить за допомогою оператора <code>+</code></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;число &quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="mi">1</span><span class="err">) </span><span class="c">// Виведе в консоль &quot;число 1&quot;</span>
 </code></pre></div>
-<p>В стрічках оператора <code>+</code> перевантажений так, що він може приймати будь який тип об'єкта, якщо в ньому реалізований метод <code>toString</code>, винятком є тип <a href="../null/">Нич</a></p>
-<p><div class="highlight"><span class="filename">конкатенація.бр</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;&quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="no">нич</span><span class="err">)</span>
+<p>В стрічках оператора <code>+</code> перевантажений так, що він може приймати будь який тип об'єкта, якщо в ньому реалізований метод <code>toString</code>, винятком є тип <a href="../null/">Ніц</a></p>
+<p><div class="highlight"><span class="filename">конкатенація.бр</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;&quot;</span><span class="err"> </span><span class="o">+</span><span class="err"> </span><span class="no">ніц</span><span class="err">)</span>
 </code></pre></div>
 Виведе:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>конкатенація.бр
@@ -955,8 +955,8 @@
 <li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">причепурити</span><span class="err">()</span></code> - Повертає стрічку, в якій видалені зайві пробіли на початку та в кінці.</li>
 <li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">причепуритиЗліва</span><span class="err">()</span></code> - Повертає стрічку, в якій видалені зайві пробіли на початку.</li>
 <li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">причепуритиСправа</span><span class="err">()</span></code> - Повертає стрічку, в якій видалені зайві пробіли в кінці.</li>
-<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">підстрічка</span><span class="err">(</span><span class="n">початок</span><span class="p">,</span><span class="err"> </span><span class="n">кількість</span><span class="err">)</span></code> -  Повертає стрічку, яка складається з символів заданої стрічки, що починаються з переданого індексу та охоплює задану кількість символів. Викидає помилку <code>ПомилкаІндексу</code>, якщо індекс більший за довжину масиву.</li>
-<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">розділити</span><span class="err">(</span><span class="n">роздільник</span><span class="err">)</span></code> -  Розбиває стрічку на підстрічки за заданим роздільником і повертає масив цих підстрічок.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">підстрічка</span><span class="err">(</span><span class="n">початок</span><span class="p">,</span><span class="err"> </span><span class="n">кількість</span><span class="err">)</span></code> -  Повертає стрічку, яка складається з символів заданої стрічки, що починаються з переданого індексу та охоплює задану кількість символів. Викидає помилку <code>ПомилкаІндексу</code>, якщо індекс більший за довжину стрічки.</li>
+<li><code class="highlight"><span class="nb">Стрічка</span><span class="err">.</span><span class="nf">розділити</span><span class="err">(</span><span class="n">роздільник</span><span class="err">)</span></code> -  Розбиває стрічку на підстрічки за заданим роздільником і повертає список цих підстрічок.</li>
 </ul>
 <h3 id="_8">Статичні методи<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <ul>
