@@ -9,17 +9,15 @@
       
       
       
-        <link rel="prev" href="../literals/">
+        <link rel="prev" href="../forEach/">
       
-      
-        <link rel="next" href="../operators/">
       
       <link rel="icon" href="../../img/logo.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
     
     
       
-        <title>Змінні - Барвінок</title>
+        <title>Винятки та помилки - Барвінок</title>
       
     
     
@@ -105,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Змінні
+              Винятки та помилки
             
           </span>
         </div>
@@ -403,21 +401,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
         Змінні
       </a>
-      
     </li>
   
 
@@ -657,11 +645,100 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../exceptions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Винятки та помилки
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Винятки та помилки
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Синтаксичні помилки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Винятки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Обробка винятків
+  </a>
+  
+    <nav class="md-nav" aria-label="Обробка винятків">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    Конструкція спробувати-обробити
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Клас Виняток
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Виклик винятків
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Список винятків
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -693,6 +770,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Синтаксичні помилки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Винятки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Обробка винятків
+  </a>
+  
+    <nav class="md-nav" aria-label="Обробка винятків">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    Конструкція спробувати-обробити
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Клас Виняток
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Виклик винятків
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Список винятків
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -710,18 +850,139 @@
 
 
 
-<h1 id="_1">Змінні<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>В Барвінку неможливо оголосити змінну завчасно.<br>
-Змінна створюється в момент першого присвоєння їй значення.</p>
+<h1 id="_1">Винятки та помилки<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>У кожній мові програмування виникають ситуації, коли щось йде не так: невірні дані, проблеми з файлами, помилки у мережевих запитах тощо. Для обробки таких ситуацій використовуються винятки.</p>
+<h2 id="_2">Синтаксичні помилки<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Синтаксичні помилки виникають, коли код не відповідає граматичним правилам мови програмування. Вони можуть бути викликані помилками у структурі коду, невірно написаними ключовими словами, неправильним використанням операторів тощо. Такі помилки виявляються ще до виконання програми і є першими помилками, з якими може стикнутись користувач.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">10</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">б</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="s">&quot;Роман&quot;</span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">якщо</span><span class="err"> </span><span class="n">змінна</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">42</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Привіт, Світ!&quot;</span><span class="err">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">кінець</span>
 </code></pre></div></td></tr></table></div>
-<p>Змінні не потрібно оголошувати з певним типом, тип визначається в ході виконання програми. Також нічого не заважає змінній змінити тип.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">10</span><span class="err"> </span><span class="c">// Змінна має тип числа</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="s">&quot;Олег&quot;</span><span class="err"> </span><span class="c">// Змінна змінила свій тип на стрічку</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>приклад.бр
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">Синтаксична помилка: Неправильний синтаксис. (знайдено на 1 рядку)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="go">    якщо змінна = 42</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="go">    ^</span>
+</code></pre></div>
+<h2 id="_3">Винятки<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Навіть якщо програма написана синтаксично правильно, можуть виникати помилки під час її виконання. Такі помилки називаються винятками. Винятки дозволяють програмі реагувати на непередбачувані ситуації, такі як ділення на нуль, звернення до неіснуючого файлу або проблеми з мережею.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">10</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">б</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">0</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nb">друкр</span><span class="err">(</span><span class="n">а</span><span class="err"> </span><span class="o">/</span><span class="err"> </span><span class="n">б</span><span class="err">)</span>
 </code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>приклад.бр
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="go">ПомилкаДіленняНаНуль: Ділення на нуль</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go">    &quot;приклад.бр&quot; на лінії 3</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="go">        друкр(а / б)</span>
+</code></pre></div>
+<h2 id="_4">Обробка винятків<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Цей розділ пояснює, як обробляти винятки, щоб забезпечити коректну роботу програм навіть у випадку помилок.</p>
+<h3 id="-">Конструкція спробувати-обробити<a class="headerlink" href="#-" title="Permanent link">&para;</a></h3>
+<p>Конструкція <code>спробувати-обробити</code> використовується для перехоплення і обробки винятків, які виникають у блоці коду. Синтаксис виглядає наступним чином:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">спробувати</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="err">    </span><span class="c">// Код, який може викликати виняток</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">обробити</span><span class="err"> </span><span class="n">ТипВинятку</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="err">    </span><span class="nb">друк</span><span class="err">(</span><span class="s">&quot;Виняток оброблений&quot;</span><span class="err">)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">обробити</span><span class="err"> </span><span class="n">ТипВинятку</span><span class="err"> </span><span class="k">як</span><span class="err"> </span><span class="n">виняток</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="err">    </span><span class="c">// За допомогою оператора &#39;як&#39; об&#39;єкт помилки присвоюється змінній</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Текст винятку:&quot;</span><span class="p">,</span><span class="err"> </span><span class="n">виняток</span><span class="err">)</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">наприкінці</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Кінець оброки&quot;</span><span class="err">)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">кінець</span>
+</code></pre></div>
+<p>Приклад оброблення помилки ділення на нуль:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">спробувати</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="err">    </span><span class="n">а</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">10</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="err">    </span><span class="n">б</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="mi">0</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="n">а</span><span class="err"> </span><span class="o">/</span><span class="err"> </span><span class="n">б</span><span class="err">)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">обробити</span><span class="err"> </span><span class="n">ПомилкаДіленняНаНуль</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Помилка: ділення на нуль&quot;</span><span class="err">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">кінець</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gp">$ </span>барвінок<span class="w"> </span>приклад.бр
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="go">Помилка: ділення на нуль</span>
+</code></pre></div>
+<p>Блок <code class="highlight"><span class="k">наприкінці</span></code> використовується для виконання коду, який має бути виконаний незалежно від того, чи виник виняток. Це корисно для очищення ресурсів або завершення операцій.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">спробувати</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">    </span><span class="c">// Код, який може викликати виняток</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">обробити</span><span class="err"> </span><span class="n">ТипВинятку</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="err">    </span><span class="nb">друкр</span><span class="err">(</span><span class="s">&quot;Виникла помилка&quot;</span><span class="err">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">наприкінці</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="err">    </span><span class="c">// Код, який виконується завжди</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="err">    </span><span class="nf">очиститиРесурси</span><span class="err">()</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">кінець</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Зверніть увагу</p>
+<p>Якщо виняток був згенерований у блоці обробки, то він замінить оброблюваний виняток. Після цього виконання перейде в блок наприкінці, якщо він існує, а потім цей виняток буде розповсюджений далі.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Зверніть увагу</p>
+<p>Якщо виняток був згенерований у блоці <code class="highlight"><span class="k">наприкінці</span></code>, то виконання коду в цьому блоці буде завершене, та виняток буде розповсюджений далі.</p>
+</div>
+<h2 id="_5">Клас Виняток<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>Клас Виняток має конструктор, який приймає лише один аргумент — рядок, що представляє текст повідомлення помилки. У цьому класі також перевантажений оператор перетворення до рядка, який повертає повідомлення, передане в конструкторі:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">помилка</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="nf">ПомилкаІмені</span><span class="err">(</span><span class="s">&quot;Повідомлення&quot;</span><span class="err">)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">друкр</span><span class="err">(</span><span class="n">помилка</span><span class="err">) </span><span class="c">// Виведе: &quot;Помилка&quot;</span>
+</code></pre></div>
+<h2 id="_6">Виклик винятків<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>Ви можете викликати винятки за допомогою оператора <code class="highlight"><span class="k">жбурнути</span></code>. Цей оператор дозволяє вам явно кидати винятки у випадках, коли ваша програма стикається з умовами, які не можуть бути оброблені звичайним шляхом. Це корисно для сигналізації про помилки, які можуть виникнути через неправильний ввід або інші критичні умови.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">жбурнути</span><span class="err"> </span><span class="nf">ПомилкаІмені</span><span class="err">(</span><span class="s">&quot;Повідомлення&quot;</span><span class="err">)</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Важливо</p>
+<p>Якщо в оператор <code class="highlight"><span class="k">жбурнути</span></code> буде переданий об'єкт, який не є нащадком винятку, то буде викликаний виняток <code class="highlight"><span class="n">ПомилкаТипу</span></code>.</p>
+</div>
+<h2 id="_7">Список винятків<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ім'я</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Виняток</td>
+<td>Базовий клас для всіх винятків</td>
+</tr>
+<tr>
+<td>ПомилкаІмені</td>
+<td>Виникає, коли ім'я змінної або функції не знайдено</td>
+</tr>
+<tr>
+<td>ПомилкаТипу</td>
+<td>Виникає, коли операція або функція отримує аргумент невірного типу</td>
+</tr>
+<tr>
+<td>ПомилкаРеалізації</td>
+<td>Виникає, коли реалізація функції або методу відсутня</td>
+</tr>
+<tr>
+<td>ПомилкаАтрибуту</td>
+<td>Виникає, коли вказаний атрибут є відсутнім</td>
+</tr>
+<tr>
+<td>ПомилкаІндексу</td>
+<td>Виникає, коли доступ до елемента масиву або колекції здійснюється за індексом, що виходить за межі допустимого діапазону</td>
+</tr>
+<tr>
+<td>ПомилкаДіленняНаНуль</td>
+<td>Виникає, коли виконується операція ділення на нуль</td>
+</tr>
+<tr>
+<td>ПомилкаЗначення</td>
+<td>Виникає, коли передане значення не відповідає очікуваному діапазону або форматам</td>
+</tr>
+<tr>
+<td>ВнутрішняПомилка</td>
+<td>Виникає при неправильний роботі інтерпретатора, але помилка не є фатальною для завершення роботи</td>
+</tr>
+</tbody>
+</table>
 
 
 
