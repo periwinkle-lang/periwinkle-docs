@@ -17,13 +17,13 @@ markdown_extensions:
   - abbr
 
 
-theme: 
+theme:
   name: material
   language: uk
 
   icon:
     repo: fontawesome/brands/github
-  
+
   logo: img/mini-logo.svg
   favicon: img/logo.svg
 
@@ -76,3 +76,4 @@ nav:
     - Вбудовані об'єкти: specification/builtin.md
     - Ітератори: specification/iterators.md
     - Цикл Кожній: specification/forEach.md
+    - Винятки та помилки: specification/exceptions.md
