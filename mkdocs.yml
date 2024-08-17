@@ -68,12 +68,12 @@ nav:
       - Логічний: specification/datatype/bool.md
       - Число: specification/datatype/number.md
       - Дійсний: specification/datatype/real.md
-      - Стрічка: specification/datatype/string.md
+      - Рядок: specification/datatype/string.md
       - Список: specification/datatype/list.md
     - Умовний оператор Якщо: specification/if.md
-    - Цикл Поки: specification/while.md
     - Функції та процедури: specification/function.md
     - Вбудовані об'єкти: specification/builtin.md
     - Ітератори: specification/iterators.md
+    - Цикл Поки: specification/while.md
     - Цикл Кожній: specification/forEach.md
     - Винятки та помилки: specification/exceptions.md
