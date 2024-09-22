@@ -7,7 +7,7 @@ hide:
 # Барвінок
 
 <div style="width:75%; display: block; margin: 0 auto" markdown>
-![Барвінок](img/logo_with_text.svg) 
+![Барвінок](img/logo_with_text.svg)
 </div>
 
 <p align="center" markdown>
@@ -43,9 +43,9 @@ hide:
 
 ``` periwinkle title="фібоначчі.барвінок"
 функція фібоначчі(н)
-    якщо н == 0
+    якщо н рівно 0
         повернути 0
-    або якщо н == 1 або н == 2
+    або якщо н рівно 1 або н рівно 2
         повернути 1
     кінець
     повернути фібоначчі(н - 1) + фібоначчі(н - 2)

@@ -25,7 +25,7 @@ theme:
     repo: fontawesome/brands/github
 
   logo: img/mini-logo.svg
-  favicon: img/logo.svg
+  favicon: img/mini-logo.svg
 
   palette:
   - media: '(prefers-color-scheme: light)'
@@ -70,10 +70,11 @@ nav:
       - Дійсний: specification/datatype/real.md
       - Рядок: specification/datatype/string.md
       - Список: specification/datatype/list.md
+      - Кортеж: specification/datatype/tuple.md
     - Умовний оператор Якщо: specification/if.md
     - Функції та процедури: specification/function.md
     - Вбудовані об'єкти: specification/builtin.md
     - Ітератори: specification/iterators.md
     - Цикл Поки: specification/while.md
-    - Цикл Кожній: specification/forEach.md
+    - Цикл Обійти: specification/forEach.md
     - Винятки та помилки: specification/exceptions.md
